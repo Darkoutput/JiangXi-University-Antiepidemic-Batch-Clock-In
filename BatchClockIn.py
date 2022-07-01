@@ -16,7 +16,7 @@ import csv
 import json
 import requests
 
-with open('./info.csv', encoding='gbk') as info:
+with open('./info.csv', encoding='utf-8') as info:
     reader = csv.reader(info)
     for stu in reader:
         if stu[0] != '学校代码':
